@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- Image and text -->
+<!-- As a heading --><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">인천대학교 특허정보검색서비스</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          인천대학교
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">산학협력단</a>
+          <a class="dropdown-item" href="#">창업지원단</a>
+          <a class="dropdown-item" href="#">산업경영공학과</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">연구인력POOL <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">아이디어붐[ideaBOOM]</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">대학본부</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+</nav>
+   <nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+  <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+         <li class="page-item"><a class="page-link" href="#">Next....</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+
+
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>검색결과</title>
+
+    <style>
+
+
+
+      #jb-container {
+        height: auto;
+        width: 1244px;
+        margin: 10px auto;
+        padding: 20px;
+<!--        border: 7px solid  #172E6A;-->
+      }
+      #jb-header {
+        width: 1200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 7px solid #172E6A  ;
+
+      }
+      #jb-content {
+        width: 1200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: center;
+        border: 7px solid #172E6A ;
+
+
+<!--        background-color : #e2e2e2;-->
+      }
+      #jb-sidebar {
+        width: 650px;
+        padding: 20px;
+        margin-bottom: 20px;
+<!--        float: left;-->
+        border: 7px solid #e2e2e2;
+      }
+      #jb-leftsidebar {
+        width: 650px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 7px solid #e2e2e2;
+      }
+      #jb-footer {
+        float: center;
+        clear: both;
+        padding: 20px;
+        border: 7px solid #e2e2e2;
+      }
+      container {
+<!--            background-color: #e2e2e2;-->
+        color: #FFBF00;
+        padding: 20px;
+      class {
+        padding: 20px;
+        border: 7px solid #e2e2e2;
+      }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div id="jb-container">
+        <div id='jb-header' >
+            <font size="50"> <a href="http://127.0.0.1:8000/"><img src="/static/images/inu_word.png", width="200", height="120"></a><b>&nbsp;특허검색결과</b> </font>
+        </div>
+        &nbsp; <b>"{{search_input}}" 에 대한 검색결과 총 <span style="color:red"> {{ all_things|length }} </span>  건의 검색결과가 있습니다.</b><p></p>
+        <div id="jb-content">
+                {% if user_output_str_in_html %}
+                {% for value in user_output_str_in_html %}
+            <article>
+                                <p>
+                    &nbsp;
+                </p>
+                <form method="GET" action="./detail" data-target="detail.html">
+                    <input type="hidden" id="{{value.3}}" name="key" value="{{value.3}}">
+                    <b>&nbsp; <button name="url" type="submit" class="class" style="border: none;
+                            outline: none;
+                            background: none;
+                            cursor: pointer;
+                            color: #0000EE;
+                            padding: 0;
+                            text-decoration: underline;
+                            font-family: inherit;
+                            font-size: inherit;">
+                    <h1 align="left" >{{value.0}}</h1>
+                                </button>
+                        <p>
+                        </p>
+
+
+                </form>
+
+                <div>
+                <a href="/static/images/kiprisinu_image/{{value.3}}.jpg"><img src="/static/images/kiprisinu_image/{{value.3}}.jpg", width="300", height="300" style="border : 10 salmon"></a>
+                <div id="jb-sidebar">
+                    <h2><pre>IPC 번호 : {{value.1}} <br><br>출원번호 : {{value.3}}<br><br>출원날짜 : {{value.4}}<br><br>출 원 인 : {{value.2}}<br><br>발 명 가 : {{value.10}}
+                    </pre>
+                    </h2>
+                </div>
+                </div>
+
+                <p>
+                    &nbsp;ac
+                </p>
+                <hr>
+            </article>
+                {% endfor %}
+
+
+            {% else %}
+
+                검색결과가 존재하지 않습니다.
+
+#정윤이형한테 받았을때, 검색결과페이지의 다음페이지, 이전페이지, 마지막페이지, 처음페이지 버튼이 작동하지 않아서, 수정한 코드들
+            {% endif %}
+        <div align="center" style="position: absolute right:100px; bottom:700px" class="jb-footer">
+        <span class="step-links">
+            {% if user_output_str_in_html.has_previous %}
+               <a href="?page=1&search_input={{search_input}}">&laquo; first</a>
+
+               <a href="?page={{ user_output_str_in_html.previous_page_number }}&search_input={{search_input}}">previous</a>
+
+            {% endif %}
+
+            <span class="current">
+                Page {{ user_output_str_in_html.number }} of {{ user_output_str_in_html.paginator.num_pages }}.
+            </span>
+
+            {% if user_output_str_in_html.has_next %}
+
+                <form method="GET" action="" data-target="search_result.html">
+                    <input type="hidden" name="page" value="{{user_output_str_in_html.next_page_number}}">
+
+                    <input type="hidden" name="search_input" value="{{search_input}}">
+                    <b>&nbsp; <button name="url" type="submit" class="class" style="border: none;
+                            outline: none;
+                            background: none;
+                            cursor: pointer;
+                            color: #0000EE;
+                            padding: 0;
+                            text-decoration: underline;
+                            font-family: inherit;
+                            font-size: inherit;">
+                    <h1 align="left" >Next page</h1>
+                                </button>
+                <a href="?page={{ user_output_str_in_html.paginator.num_pages }}&search_input={{search_input}}">Last page &raquo;</a>
+
+            {% else %}
+                마지막 페이지입니다
+            {% endif %}
+       </span>
+        </div>
+        </div>
+
+
+
+        </div>
+    </div>
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">About this Service</div>
+  <div class="card-body">
+    <h5 class="card-title">University and Business Collaboration</h5>
+    <p class="card-text">The rate of collaboration between universities and businesses will increase.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,86 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Boot strap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .header{
+            margin-top:20px;
+        }
+        .content{
+            height: 42%;
+            float:center;
+        }
+        .messageDiv{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            float:center;
+        }
+        .toDoDiv{
+
+        }
+        .custom-btn{
+            font-size: 10px;
+        }
+        .panel-footer{
+            height:10%;
+            color:#e2e2e2;
+        }
+        .container{
+            margin-top: 150px;
+            float:center;
+        }
+
+
+
+    </style>
+
+    <title>인천대학교 특허정보검색서비스</title>
+</head>
+    {% load static %}
+    <script src="{% static 'js/test.js' %}" > </script>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="page-header">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<img style="margin-bottom:20;"  src="/static/images/inu_word.png", width="200", height="120"><b style="padding-top:50;"><font size="20" > <br>&nbsp;특허정보검색서비스 </b></font><font> <small> &nbsp; by JYM. KMG (Dept. of Industrial & Management Eng.)</small> </font>
+                    <a class="img" style=" padding-bottom:100px;" href="https://sites.google.com/site/imlabinu/members/kkim"><img src="/static/images/IILAB-removebg-preview.png" align="right" ></a></p>
+
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="messageDiv">
+                    <form action="./search_result/" method="GET">{% csrf_token %}
+                    <div class="input-group">
+                        <input id="search_input1" name="search_input" type="text" class="form-control" placeholder="검색할 내용을 적어주세요">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">검색</button>
+                        </span>
+                    </div>
+                   </form>
+
+            </div>
+            <div>
+
+                {% block content %}
+                {% endblock %}
+
+            </div>
+
+
+        </div>
+<!--        <div >-->
+<!--            <a href="https://sites.google.com/site/imlabinu/members/kkim"><img src="/static/images/IILAB-removebg-preview.png" align="right" height="60"></a>-->
+<!--        </div>-->
+    </div>
+</body>
+
+</html>
