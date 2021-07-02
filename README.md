@@ -88,6 +88,52 @@ If the search results exceed 10, they are divided into 10 and placed on the next
 ![New Search](https://user-images.githubusercontent.com/66030601/124118918-d6ecb800-daac-11eb-898e-c5415aec1c2d.gif)
 If you want to search for a new search term, click the INU logo.
 
+#
+◆The application was launched based on the web using the search engine I developed.
+
+◆I hope it will be the foundation of industry-academic cooperation development. 
+
+#
+[Launch Application]
+
+![Launch Application](https://user-images.githubusercontent.com/66030601/124206495-77c78b80-db1e-11eb-977c-01342dfba163.gif)
+
+This is the image of downloading and running the application from Google Play Store.
+
+You can download it by searching "INU 산학매칭 (Incheon University Industry-Academic Matching)".
+#
+
+[Search for Research Topics]
+
+![Search for Research Topics](https://user-images.githubusercontent.com/66030601/124208708-1524be80-db23-11eb-9220-57e21cab1d03.gif)
+
+You can search for research topics that you are interested in.
+
+I searched for "Artificial Intelligence".
+#
+
+[Search Researchers]
+
+![Search Researchers](https://user-images.githubusercontent.com/66030601/124208744-240b7100-db23-11eb-9c28-0879fcba832d.gif)
+
+This time, I searched the name of the researcher in the field of artificial intelligence that I searched earlier.
+
+The search engine scans as well as it did before.
+#
+
+[Contact the researcher for the study]
+
+![Contact the researcher for the study](https://user-images.githubusercontent.com/66030601/124208757-31c0f680-db23-11eb-9ef4-a92387e90286.gif)
+
+You can request additional data or contact researchers in the study through the application.
+#
+
+[Industry-Academic News]
+
+![Industry-Academic News](https://user-images.githubusercontent.com/66030601/124208779-3f767c00-db23-11eb-9e4d-471b6ea5a8f6.gif)
+
+You can see industry-academic news on the menu.
+
 
 
 
