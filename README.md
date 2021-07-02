@@ -94,6 +94,8 @@ If you want to search for a new search term, click the INU logo.
 ◆I hope it will be the foundation of industry-academic cooperation development. 
 
 #
+◆INU industry-academic matching application
+
 [Launch Application]
 
 ![Launch Application](https://user-images.githubusercontent.com/66030601/124206495-77c78b80-db1e-11eb-977c-01342dfba163.gif)
