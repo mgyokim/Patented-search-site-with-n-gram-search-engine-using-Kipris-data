@@ -1,4 +1,4 @@
-# Patented-search-site-with-[n-gram](https://en.wikipedia.org/wiki/N-gram)-search-engine-using-Kipris-data
+# Patent-search-site-with-[n-gram](https://en.wikipedia.org/wiki/N-gram)-search-engine-using-Kipris-data
 [Search engine and search site development motivation]
 
 The issue has been raised that it is cumbersome for companies to search for researchers and corresponding patents in the field of research they want during industry-academic cooperation.
